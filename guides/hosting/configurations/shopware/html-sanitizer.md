@@ -27,6 +27,10 @@ In this example, the `<img>` tag, as well as the CSS attributes `src`, `alt` and
 
 <<< @/docs/snippets/config/html_sanitizer.yaml
 
+## Disabling the Sanitizer
+
+If the sanitizer is turned off, someone with content editing rights can add JavaScript to the page to get more privileges. However, turning off the sanitizer doesn't increase risks for attackers without admin panel access.
+
 If you want to deactivate the sanitizer despite security risks, you can also do this in the `z-shopware.yaml` using the following code:
 
 <<< @/docs/snippets/config/html_sanitizer_disabled.yaml
